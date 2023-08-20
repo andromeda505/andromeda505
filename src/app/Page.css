@@ -1,0 +1,28 @@
+.mainApp {
+    display: flex;
+    flex-direction: column;
+    background-color: olivedrab;
+    min-height: 100vh;
+}
+
+.About {
+  background-color: yellow;
+  min-height: 100vh;
+}
+
+.Projects {
+  background-color: aqua;
+  min-height: 100vh;
+}
+
+.Contact {
+  background-color: blue;
+  min-height: 100vh;
+}
+
+.Foot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: brown;
+}

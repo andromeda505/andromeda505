@@ -1,9 +1,30 @@
-import Image from 'next/image'
+import { Projects } from './Projects/Projects'
+import { About } from './About/About'
+import { Contact } from './Contact/Contact'
+import { Foot } from './Foot/Foot'
+import './Page.css'
+import DrawerAppBar from './NavBar/Navbar'
 
-export default function Home() {
+export default function Portfolio() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     Mayte Paola Falcon Acosta. The data scientist you will want to have...
+    <main className='mainApp'>
+
+      <DrawerAppBar/>
+      <section className='About'>
+        <About/>
+      </section>
+
+      <section className='Projects'>
+        <Projects/>
+      </section>
+
+      <section className='Contact'>
+        <Contact/>
+      </section>
+
+      <section className='Foot'>
+        <Foot/>
+      </section>
     </main>
   )
 }
