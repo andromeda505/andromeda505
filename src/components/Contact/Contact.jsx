@@ -1,6 +1,6 @@
 export const Contact = () =>  {
   return (
-    <main>
+    <main id="contact">
      Contact
     </main>
   )

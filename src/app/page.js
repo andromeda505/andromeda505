@@ -1,10 +1,10 @@
+import { NavBar } from '../components/NavBar/NavBar'
+import { Home } from '../components/Home/Home'
+import { Skills } from '../components/Skills/Skills'
 import { Projects } from '../components/Projects/Projects'
-import { About } from '../components/About/About'
 import { Contact } from '../components/Contact/Contact'
 import { Foot } from '../components/Foot/Foot'
 import './Page.css'
-import 'bootstrap/dist/css/bootstrap.min.css';
-import { NavBar } from '@/components/NavBar/NavBar'
 
 export default function Portfolio() {
   return (
@@ -12,8 +12,12 @@ export default function Portfolio() {
 
       <NavBar/>
 
-      <section className='About'>
-        <About/>
+      <section className='Home'>
+        <Home/>
+      </section>
+
+      <section className='Skills'>
+        <Skills/>
       </section>
 
       <section className='Projects'>

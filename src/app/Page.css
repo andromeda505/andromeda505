@@ -216,8 +216,13 @@ nav.navbar .navbar-toggler[aria-expanded='true'] .navbar-toggler-icon {
 }
 
 
-.About {
+.Home {
   background-color: yellow;
+  min-height: 100vh;
+}
+
+.Skills {
+  background-color: red;
   min-height: 100vh;
 }
 

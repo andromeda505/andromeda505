@@ -1,8 +1,6 @@
-import Image from 'next/image'
-
 export const Projects = () => {
   return (
-    <main>
+    <main id='projects'>
      Projects
     </main>
   )
