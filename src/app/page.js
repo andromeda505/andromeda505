@@ -1,15 +1,17 @@
-import { Projects } from './Projects/Projects'
-import { About } from './About/About'
-import { Contact } from './Contact/Contact'
-import { Foot } from './Foot/Foot'
+import { Projects } from '../components/Projects/Projects'
+import { About } from '../components/About/About'
+import { Contact } from '../components/Contact/Contact'
+import { Foot } from '../components/Foot/Foot'
 import './Page.css'
-import DrawerAppBar from './NavBar/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { NavBar } from '@/components/NavBar/NavBar'
 
 export default function Portfolio() {
   return (
     <main className='mainApp'>
 
-      <DrawerAppBar/>
+      <NavBar/>
+
       <section className='About'>
         <About/>
       </section>
