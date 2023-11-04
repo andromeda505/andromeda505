@@ -28,7 +28,7 @@ export const NavBar = () =>  {
 
     return (
         <header  className={scrolled ? 'Cabecera-scrolled' : 'Cabecera'}>
-            <h1 className={activeLink === 'home' ? 'Cabecera-h1-act-link' : 'Cabecera-h1'} onClick={ () => {onUpdateActiveLink('home');  menu ? toggleMenu : '' }}>
+            <h1 className={activeLink === 'home' ? 'Cabecera-h1-act-link' : 'Cabecera-h1'} onClick={ () => { menu ? toggleMenu() : ''; onUpdateActiveLink('home') }}>
                 <a href="#home" className="Cabecera-a">Andrómeda</a>
             </h1>
 

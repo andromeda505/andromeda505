@@ -15,7 +15,6 @@
 }
 
 .Cabecera-scrolled { 
-
     background-color:cadetblue;
     position: fixed;
     color: aliceblue;
@@ -69,6 +68,10 @@
 }
 
 @media screen and (max-width:480px) {
+    body::-webkit-scrollbar {
+        display: none;
+      }
+      
     .Cabecera-button {
         display: flex;
     }
