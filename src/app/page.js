@@ -9,28 +9,33 @@ import './Page.css'
 export default function Portfolio() {
   return (
     <main className='mainApp'>
-
       <NavBar/>
 
-      <section className='Home'>
-        <Home/>
-      </section>
+      <div className='MainBoxContent'>
 
-      <section className='Skills'>
-        <Skills/>
-      </section>
 
-      <section className='Projects'>
-        <Projects/>
-      </section>
 
-      <section className='Contact'>
-        <Contact/>
-      </section>
+        <section className='Home'>
+          <Home/>
+        </section>
 
-      <section className='Foot'>
-        <Foot/>
-      </section>
+        <section className='Skills'>
+          <Skills/>
+        </section>
+
+        <section className='Projects'>
+          <Projects/>
+        </section>
+
+        <section className='Contact'>
+          <Contact/>
+        </section>
+
+        <section className='Foot'>
+          <Foot/>
+        </section>
+        </div>
+
     </main>
   )
 }

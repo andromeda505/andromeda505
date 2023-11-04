@@ -1,7 +1,9 @@
 export const Contact = () =>  {
   return (
     <main id="contact">
-     Contact
+      <section className="contactBox">
+        Contact
+      </section>
     </main>
   )
 }

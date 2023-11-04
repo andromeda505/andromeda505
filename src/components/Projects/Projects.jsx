@@ -1,7 +1,9 @@
 export const Projects = () => {
   return (
     <main id='projects'>
-     Projects
+      <section className="projectsBox">
+        Projects
+      </section>
     </main>
   )
 }
