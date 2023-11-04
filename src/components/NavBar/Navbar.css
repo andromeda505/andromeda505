@@ -13,6 +13,24 @@
     top: 0;
     transition: 0.32 ease-in-out;
 }
+
+.Cabecera-scrolled { 
+
+    background-color:cadetblue;
+    position: fixed;
+    color: aliceblue;
+    width: 100%;
+    padding: 1em;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 9999;
+    top: 0;
+    transition: 0.32 ease-in-out;
+}
+
 .Cabecera-h1 {}
 .Cabecera-a {}
 
