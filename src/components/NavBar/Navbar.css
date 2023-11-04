@@ -27,10 +27,9 @@
 }
 
 .Cabecera-nav {
-    background-color: bisque;
 }
+
 .Cabecera-ul {
-    background-color: blue;
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -41,6 +40,15 @@
     background-color: black;
 }
 
+.Cabecera-h1-act-link{
+    background-color: orange;
+    transition: all .8s ease;
+}
+
+.Cabecera-li-act-link{
+    background-color:cornflowerblue;
+    transition: all .8s ease;
+}
 
 @media screen and (max-width:480px) {
     .Cabecera-button {
@@ -73,7 +81,7 @@
         height: 100%;
     }
 
-    .Cabecera-li{
+    .Cabecera-li {
         margin: .5em 0;
         background-color: blueviolet;
         width: 100%;
