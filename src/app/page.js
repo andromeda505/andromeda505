@@ -53,7 +53,7 @@ export default function Portfolio() {
         document.getElementById('projectsTog').classList.remove('Cabecera-li-act-link')
         document.getElementById('skillsTog').classList.remove('Cabecera-li-act-link')
       }
-    }, 150);
+    }, 175);
 
 
   },[homeIsIntersecting, skillsIsIntersected, projectsIsIntersected, contactIsIntersected ])
