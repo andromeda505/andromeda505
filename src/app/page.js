@@ -1,33 +1,63 @@
+"use client"
+import { useEffect } from 'react'
 import { NavBar } from '../components/NavBar/NavBar'
 import { Home } from '../components/Home/Home'
 import { Skills } from '../components/Skills/Skills'
 import { Projects } from '../components/Projects/Projects'
 import { Contact } from '../components/Contact/Contact'
 import { Foot } from '../components/Foot/Foot'
+import { useIntersection } from '../components/useIntersection';
 import './Page.css'
 
 export default function Portfolio() {
+  
+  const [ homeIsIntersecting, homeRef ] = useIntersection({ threshold:.7 })
+  const [ skillsIsIntersected, skillsRef ] = useIntersection({ threshold:.7 })
+  const [ projectsIsIntersected, projectsRef] = useIntersection({ threshold:.7 })
+  const [ contactIsIntersected, contactRef ] = useIntersection({ threshold:.7 })
+
+  useEffect(()=>{
+    setTimeout(() => {
+      
+      if (homeIsIntersecting) {
+        console.log('HOME!!!');
+        console.log( document.getElementById('homeTog'));
+      } 
+      else if(skillsIsIntersected) {
+        console.log('SKILLS!!!');
+        console.log( document.getElementById('skillsTog'));
+      }else if(projectsIsIntersected ) {
+        console.log('PROJECTS!!!');
+        console.log( document.getElementById('projectsTog'));
+      }else if(contactIsIntersected) {
+        console.log('CONTACT!!!');
+        console.log( document.getElementById('contactTog'));
+      }
+    }, 500);
+
+
+  },[homeIsIntersecting, skillsIsIntersected, projectsIsIntersected, contactIsIntersected ])
+
   return (
     <main className='mainApp'>
+
       <NavBar/>
 
       <div className='MainBoxContent'>
 
-
-
-        <section className='Home'>
+        <section ref={homeRef}  className='Home'>
           <Home/>
         </section>
 
-        <section className='Skills'>
+        <section ref={skillsRef}  className='Skills'>
           <Skills/>
         </section>
 
-        <section className='Projects'>
+        <section ref={projectsRef}  className='Projects'>
           <Projects/>
         </section>
 
-        <section className='Contact'>
+        <section ref={contactRef} className='Contact'>
           <Contact/>
         </section>
 
