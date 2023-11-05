@@ -18,44 +18,28 @@ export default function Portfolio() {
 
   useEffect(()=>{
     setTimeout(() => {
-      
       if (homeIsIntersecting) {
-        console.log('HOME!!!');
-        console.log( document.getElementById('homeTog'));
         document.getElementById('homeTog').classList.add('Cabecera-h1-act-link')
-
         document.getElementById('skillsTog').classList.remove('Cabecera-li-act-link')
         document.getElementById('projectsTog').classList.remove('Cabecera-li-act-link')
         document.getElementById('contactTog').classList.remove('Cabecera-li-act-link')
-      } 
-      else if(skillsIsIntersected) {
-        console.log('SKILLS!!!');
-        console.log( document.getElementById('skillsTog'));
+      }else if(skillsIsIntersected) {
         document.getElementById('skillsTog').classList.add('Cabecera-li-act-link')
-
         document.getElementById('homeTog').classList.remove('Cabecera-h1-act-link')
         document.getElementById('projectsTog').classList.remove('Cabecera-li-act-link')
         document.getElementById('contactTog').classList.remove('Cabecera-li-act-link')
       }else if(projectsIsIntersected ) {
-        console.log('PROJECTS!!!');
-        console.log( document.getElementById('projectsTog'));
         document.getElementById('projectsTog').classList.add('Cabecera-li-act-link')
-
         document.getElementById('homeTog').classList.remove('Cabecera-h1-act-link')
         document.getElementById('skillsTog').classList.remove('Cabecera-li-act-link')
         document.getElementById('contactTog').classList.remove('Cabecera-li-act-link')
       }else if(contactIsIntersected) {
-        console.log('CONTACT!!!');
-        console.log( document.getElementById('contactTog'));
         document.getElementById('contactTog').classList.add('Cabecera-li-act-link')
-
         document.getElementById('homeTog').classList.remove('Cabecera-h1-act-link')
         document.getElementById('projectsTog').classList.remove('Cabecera-li-act-link')
         document.getElementById('skillsTog').classList.remove('Cabecera-li-act-link')
       }
     }, 175);
-
-
   },[homeIsIntersecting, skillsIsIntersected, projectsIsIntersected, contactIsIntersected ])
 
   return (

@@ -1,7 +1,7 @@
 export const Foot = () => {
     return(
-        <main>
+        <section>
          Footer
-        </main>
+        </section>
       )
 }
