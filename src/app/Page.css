@@ -193,7 +193,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   .Cabecera-nav.isActive {
-      height: 50vh;
+      height: 90vh;
       opacity: 1;
   }
 
