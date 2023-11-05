@@ -1,7 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react'
-import '../../app/Page.css'
+import './NavBar.css'
 
 export const NavBar = () =>  {
     const [scrolled, setScrolled] = useState(false)
