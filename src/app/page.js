@@ -68,8 +68,7 @@ export default function Portfolio() {
         <section className='Foot'>
           <Foot/>
         </section>
-        </div>
-
+      </div>
     </main>
   )
 }

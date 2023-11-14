@@ -1,0 +1,21 @@
+#skills {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillsBox {
+    background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 80%;
+}
+
+/* Mobile */
+@media screen and (max-width:480px) {
+    .skillsBox {
+        width: 95%;
+    }
+}

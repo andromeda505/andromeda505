@@ -1,0 +1,34 @@
+/* laptop 1024px Tablet 640px */
+
+#home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeBox {
+    background-color: rebeccapurple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 80%;
+}
+
+.homeBox .imageHome {
+    background-color: black;
+    min-width: calc(50% - 5%);
+    height: 200px;
+}
+
+.homeBox .txtHome {
+    background-color: blue;
+    min-width: calc(50% - 5%);
+}
+
+/* Mobile */
+@media screen and (max-width:480px) {
+    .homeBox {
+        width: 95%;
+    }
+}

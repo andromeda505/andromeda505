@@ -1,0 +1,21 @@
+#projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectsBox {
+    background-color:crimson;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 80%;
+}
+
+/* Mobile */
+@media screen and (max-width:480px) {
+    .projectsBox {
+        width: 95%;
+    }
+}

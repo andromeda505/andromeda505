@@ -1,3 +1,5 @@
+import './Skills.css'
+
 export const Skills = () =>  {
   return (
     <main id='skills'>

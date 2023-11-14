@@ -1,0 +1,21 @@
+#contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contactBox {
+    background-color:tomato;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 80%;
+}
+
+/* Mobile */
+@media screen and (max-width:480px) {
+    .contactBox {
+        width: 95%;
+    }
+}

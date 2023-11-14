@@ -1,5 +1,6 @@
 .Cabecera {
     background-color: black;
+    width: 80%;
     position: fixed;
     color: aliceblue;
     width: 100%;
@@ -12,7 +13,10 @@
     z-index: 9999;
     top: 0;
     transition: 0.32 ease-in-out;
+    padding-right: calc(100% - 90%);
+    padding-left: calc(100% - 90%);
 }
+
 
 .Cabecera-scrolled { 
     background-color:cadetblue;
@@ -28,6 +32,8 @@
     z-index: 9999;
     top: 0;
     transition: 0.32 ease-in-out;
+    padding-right: calc(100% - 90%);
+    padding-left: calc(100% - 90%);
 }
 
 .Cabecera-h1 {}
@@ -70,8 +76,14 @@
 @media screen and (max-width:480px) {
     body::-webkit-scrollbar {
         display: none;
-      }
-      
+    }
+
+    .Cabecera,
+    .Cabecera-scrolled {
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+    }
+
     .Cabecera-button {
         display: flex;
     }
@@ -90,7 +102,7 @@
     }
 
     .Cabecera-nav.isActive {
-        height: 50vh;
+        height: 90vh;
         opacity: 1;
     }
 

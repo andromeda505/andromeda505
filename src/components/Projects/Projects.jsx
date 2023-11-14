@@ -1,3 +1,5 @@
+import './Projects.css'
+
 export const Projects = () => {
   return (
     <main id='projects'>
