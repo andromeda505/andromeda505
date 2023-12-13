@@ -1,5 +1,5 @@
 "use client"
-import { useRef,useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export const useIntersection = (props) => {
     const {root, rootMargin = "0px", cb,threshold = 0} = props;

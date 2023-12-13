@@ -43,32 +43,30 @@ export default function Portfolio() {
   },[homeIsIntersecting, skillsIsIntersected, projectsIsIntersected, contactIsIntersected ])
 
   return (
-    <main className='mainApp'>
+  <main className='mainApp'>
 
-      <NavBar/>
+    <NavBar/>
 
-      <div className='MainBoxContent'>
+    <section ref={homeRef}  className='Home'>
+      <Home/>
+    </section>
 
-        <section ref={homeRef}  className='Home'>
-          <Home/>
-        </section>
+    <section ref={skillsRef}  className='Skills'>
+      <Skills/>
+    </section>
 
-        <section ref={skillsRef}  className='Skills'>
-          <Skills/>
-        </section>
+    <section ref={projectsRef}  className='Projects'>
+      <Projects/>
+    </section>
 
-        <section ref={projectsRef}  className='Projects'>
-          <Projects/>
-        </section>
+    <section ref={contactRef} className='Contact'>
+      <Contact/>
+    </section>
 
-        <section ref={contactRef} className='Contact'>
-          <Contact/>
-        </section>
+    <section className='Foot'>
+      <Foot/>
+    </section>
 
-        <section className='Foot'>
-          <Foot/>
-        </section>
-      </div>
-    </main>
+  </main>
   )
 }

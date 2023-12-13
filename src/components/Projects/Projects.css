@@ -2,6 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: black;
 }
 
 .projectsBox {
@@ -10,12 +11,8 @@
     justify-content: center;
     align-items: center;
     gap: 5%;
-    width: 80%;
+    width: 100%;
 }
 
 /* Mobile */
-@media screen and (max-width:480px) {
-    .projectsBox {
-        width: 95%;
-    }
-}
+@media screen and (max-width:480px) {}

@@ -170,16 +170,13 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid orange;  /* creates padding around scroll thumb */
 }
 
-/*APP*/
+/*::::::::::::: APP :::::::::::::*/
 
 .mainApp {
-  display: flex;
+  max-width: 1200px;
+  background-color: blue !important;
+  margin: auto;
   position: relative;
-  flex-direction: column;
-  background-color: olivedrab;
-  min-height: 100vh;
-  justify-content: center;
-  align-items: center;
 }
 
 .Home .homeBox,
@@ -202,6 +199,7 @@ body::-webkit-scrollbar-thumb {
 
 .Foot {
   display: flex;
+  justify-content: center;
   align-items: center;
   background-color: brown;
 }
