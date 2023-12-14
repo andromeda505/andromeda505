@@ -13,7 +13,7 @@ export default function Portfolio() {
   
   const [ homeIsIntersecting, homeRef ] = useIntersection({ threshold:.7 })
   const [ skillsIsIntersected, skillsRef ] = useIntersection({ threshold:.7 })
-  const [ projectsIsIntersected, projectsRef] = useIntersection({ threshold:.7 })
+  const [ projectsIsIntersected, projectsRef] = useIntersection({ threshold:.2 })
   const [ contactIsIntersected, contactRef ] = useIntersection({ threshold:.7 })
 
   useEffect(()=>{
